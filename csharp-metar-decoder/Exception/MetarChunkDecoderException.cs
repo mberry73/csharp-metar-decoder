@@ -21,8 +21,6 @@ namespace csharp_metar_decoder
         {
         }
 
-        [SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
-        // Serialization constructor is private, as this class is sealed
         private MetarChunkDecoderException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
